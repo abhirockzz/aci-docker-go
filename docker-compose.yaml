@@ -1,0 +1,17 @@
+version: '3'
+services:
+  redis-consumer:
+    image: abhirockzz/redis-consumer
+    container_name: consumer
+    environment:
+      REDIS_HOST: "<redis  host>:<redis port>"
+      REDIS_PASSWORD: "<redis password>"
+      REDIS_LIST: "<redis list name>"
+
+  redis-producer:
+    image: abhirockzz/redis-producer
+    container_name: producer
+    environment:
+      REDIS_HOST: "<redis  host>:<redis port>"
+      REDIS_PASSWORD: "<redis password>"
+      REDIS_LIST: "<redis list name>"
