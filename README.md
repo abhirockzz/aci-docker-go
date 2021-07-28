@@ -50,7 +50,7 @@ docker logs -f aci-docker_consumer
 
 Navigate to Azure portal and check ACI container group
 
-TODO img
+![](aci-docker.png)
 
 To delete:
 
